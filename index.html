@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title> ABDELHAK AMINE | مصمم مواقع</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0d0d0d;
+      font-family: 'Tahoma', sans-serif;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px;
+      background-color: #1a1a1a;
+      border-radius: 20px;
+      border: 2px solid #00ffff;
+      box-shadow: 0 0 15px #00ffff, 0 0 30px #ff00ff;
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .logo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ff00ff;
+      box-shadow: 0 0 12px #ff00ff99;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      color: #00ffff;
+      font-size: 2.4rem;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    h2 {
+      color: #ff00ff;
+      margin-top: 30px;
+      text-shadow: 0 0 10px #ff00ff88;
+    }
+
+    p, label {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .social-links {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 5px 10px;
+      padding: 10px 20px;
+      background-color: #222;
+      color: #00ffff;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 0 10px #00ffff55;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      background-color: #00ffff;
+      color: #111;
+    }
+
+    .cv-section {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #00ffff88;
+      margin-top: 20px;
+      display: none;
+      animation: fadeIn 0.6s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .cv-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .cv-button button {
+      padding: 12px 25px;
+      background-color: #ff00ff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 12px #ff00ff99;
+    }
+
+    .cv-button button:hover {
+      background-color: #e600e6;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .portfolio-item {
+      background-color: #111;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #00ffff33;
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .portfolio-item a {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: #222;
+      color: #fff;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid #00ffff;
+    }
+
+    button[type="submit"] {
+      background-color: #00ffff;
+      color: #111;
+      font-weight: bold;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 12px #00ffff;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #00cccc;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+      border-top: 1px solid #333;
+      padding-top: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <img class="logo" src="photo_2025-06-30_12-49-05.jpg" alt="AKAL Logo">
+      <h1> ABDELHAK AMINE</h1>
+      <p>مصمم ومطور مواقع ويب عصري واحترافي</p>
+    </div>
+
+    <!-- زر إظهار السيرة الذاتية -->
+    <div class="cv-button">
+      <button onclick="document.getElementById('cv').style.display='block'">📄 عرض السيرة الذاتية</button>
+    </div>
+
+    <!-- السيرة الذاتية -->
+    <section class="cv-section" id="cv">
+      <h2>السيرة الذاتية</h2>
+      <p>أنا <strong> ABDELHAK AMINE</strong>، مصمم ومطور ويب محترف من الجزائر. أمتلك خبرة واسعة في تصميم وتطوير مواقع الإنترنت الحديثة.</p>
+      <ul>
+        <li>💻 أكثر من 3 سنوات خبرة في HTML / CSS / JavaScript</li>
+        <li>🛍️ تصميم متاجر إلكترونية متكاملة وربط الدفع</li>
+        <li>📱 تصميم متجاوب لجميع الأجهزة</li>
+        <li>🚀 تحسين سرعة المواقع وتجربة المستخدم</li>
+        <li>🎯 محترف في SEO وتحسين الترتيب في محركات البحث</li>
+      </ul>
+      <p><strong>هدفي:</strong> أسعى دائمًا لتقديم عمل احترافي يُرضي العميل، مع الالتزام التام بالمواعيد والدقة في التنفيذ. بفضل خلفيتي الأكاديمية في الإعلام الآلي، أجمع بين الجانب النظري والتقني، مما يتيح لي تقديم حلول مبتكرة وعملية في نفس الوقت. .</p>
+    </section>
+
+    <!-- معرض الأعمال -->
+    <section>
+      <h2>معرض أعمالي</h2>
+      <div class="portfolio">
+       <div class="portfolio-item">
+  <img src="hatem-boukhit-ALd9CEDrRdY-unsplash.jpg" alt="مشروع بيع عطر رجالي">
+  <a href="https://akal38.github.io/akal-abdelhak-/" target="_blank">مشاهدة مشروع بيع العطر</a>
+</div>
+
+        <div class="portfolio-item">
+          <img src="téléchargement (7).jpg" alt="مطعم الأكلات التقليدية">
+          <a href=" https://akal38.github.io/food/">مشاهدة مشروع مطعم الأكلات التقليدية</a>
+</div>
+   
+
+        <div class="portfolio-item">
+          <img src="images.jpg" alt=" إدارة فندق">
+          <a href=" https://akal38.github.io/hotel-/">مشاهدة مشروع   إدارة فندق</a>
+</div>
+
+
+
+        <div class="portfolio-item">
+          <img src="téléchargement (8).jpg" alt=" خدمة التوصيل ">
+          <a href="https://akal38.github.io/delivery/">مشاهدة مشروع   خدمة التوصيل </a>
+</div>
+
+
+
+
+
+
+ <div class="portfolio-item">
+  <img src="téléchargement.jpg" alt="مشروع بيع عطر رجالي">
+  <a href="https://akal38.github.io/MEDICINE/" target="_blank">مشاهدة مشروع عيادة طبية</a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- نموذج التواصل -->
+    <section>
+      <h2>📬 تواصل معي</h2>
+      <form action="mailto:akalabdelhakamine38@gmail.com" method="post" enctype="text/plain">
+        <label>الاسم الكامل:</label>
+        <input type="text" name="name" required>
+
+        <label>رقم الهاتف:</label>
+        <input type="text" name="phone" required>
+
+        <label>رسالتك:</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">📨 إرسال</button>
+      </form>
+    </section>
+
+    <!-- روابط التواصل -->
+    <div class="social-links">
+      <a href="mailto:akalabdelhakamine38@gmail.com">📧 البريد الإلكتروني</a>
+      <a href="https://www.facebook.com/profile.php?id=61577163575345" target="_blank">📘 فيسبوك</a>
+      <a href="https://www.instagram.com/webdesignakal38" target="_blank">📸 إنستغرام</a>
+    </div>
+
+    <footer>
+      &copy; 2025 AKAL ABDELHAK AMINE - جميع الحقوق محفوظة
+    </footer>
+
+  </div>
+
+</body>
+</html>
